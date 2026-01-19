@@ -4,7 +4,7 @@ def linear_beta_schedule(timesteps):
     return torch.linspace(1e-4, 0.02, timesteps)
 
 class Diffusion:
-    def __init__(self, timesteps=1000, device="cpu"):
+    def __init__(self, timesteps=200, device="cpu"):
         self.timesteps = timesteps
         self.device = device
 
