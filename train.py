@@ -47,3 +47,6 @@ for step, tokens in enumerate(tqdm(loader)):
 
     if step >= 500:
         break
+# after training loop
+torch.save(model.state_dict(), "denoiser.pt")
+print("Model saved to denoiser.pt")
